@@ -35,7 +35,7 @@ class First{
     printList(){
         let nowNone = list1.head;
         while (nowNone){
-            console.log(nowNone.value);
+            // console.log(nowNone.value);
             nowNone = nowNone.next;
         }
     }
@@ -51,7 +51,7 @@ list1.add(234);
 list1.add(55);
 list1.add(6);
 list1.printList();
-console.log("------------");
+// console.log("------------");
 
 // n - заданное значение после которого удаляются элементы
 let n = 3;
@@ -74,7 +74,7 @@ while (nowNone){
 list1.printList();
 
 // Создаём встроенный список и заполняем его такими же значениями
-console.log("+++++++");
+// console.log("+++++++");
 let testList = new Map();
 testList.set('1', 10);
 testList.set('2', 22);
@@ -96,7 +96,8 @@ for(let item of testList.keys()){
 }
 
 // выводим редактированный список
-for(let val of testList.values()){
-    console.log(val);
-}
+// for(let val of testList.values()){
+//     console.log(val);
+// }
 
+module.exports = { Node, First };
